@@ -10,4 +10,7 @@ if ($LastExitCode -ne 0) {
 Write-Output "<details>`n<summary>License check summary</summary>`n" >> $env:GITHUB_STEP_SUMMARY
 Get-Content $licenseOutput >> $env:GITHUB_STEP_SUMMARY
 Write-Output "`n</details>`n" >> $env:GITHUB_STEP_SUMMARY
+Write-Output "BEGIN licenseCheckResults.md"
+Get-Content $licenseOutput
+Write-Output "END licenseCheckResults.md"
 exit $LastExitCode
