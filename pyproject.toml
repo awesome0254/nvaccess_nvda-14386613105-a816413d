@@ -92,9 +92,11 @@ using = "requirements:requirements.txt"
 only_licenses = ["BSD", "MIT", "Python", "LGPLV3+", "Apache"]
 ignore_packages = [
 	# Compatible licenses:
+	"configobj",  # BSD license, but git dependency metadata is not exposed correctly
 	"certifi",  # Mozilla Public License 2.0
 	"markdown-link-attr-modifier",  # GPLV3 license, but not in PyPI correctly
 	"pycaw",  # MIT license, but not in PyPI
+	"urllib3",  # MIT license, but not in PyPI
 	"wxPython",  # wxWindows Library License
 ]
 
