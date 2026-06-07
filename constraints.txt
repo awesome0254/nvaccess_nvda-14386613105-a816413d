@@ -1,2 +1,17 @@
 # Pillow is an implicit dependency and requires zlib and jpeg by default, but we don't need it
 Pillow==11.1.0 -C "zlib=disable" -C "jpeg=disable"
+
+# Replay compatibility pins for dependency metadata available around the original 2025-04-10 run.
+# These keep licensecheck transitive dependency metadata stable without changing NVDA source logic.
+MarkupSafe==3.0.2
+Pygments==2.19.1
+cachetools==5.5.2
+cffi==1.17.1
+idna==3.10
+imageio==2.37.0
+numpy==2.2.4
+pycparser==2.22
+pymsgbox==1.0.6
+tomli==2.2.1
+uv==0.6.14
+wrapt==1.17.2
